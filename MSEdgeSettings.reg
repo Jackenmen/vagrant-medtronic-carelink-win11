@@ -1,0 +1,17 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Edge]
+"ConfigureOnPremisesAccountAutoSignIn"=dword:00000000
+"RestoreOnStartup"=dword:00000004
+"HideFirstRunExperience"=dword:00000001
+"HomepageIsNewTabPage"=dword:00000000
+"NewTabPageContentEnabled"=dword:00000000
+"NewTabPageHideDefaultTopSites"=dword:00000001
+"ShowHomeButton"=dword:00000001
+"TranslateEnabled"=dword:00000000
+"AutoLaunchProtocolsFromOrigins"="[{\"allowed_origins\": [\"carelink.minimed.eu\"], \"protocol\": \"mdtcldss-upload\"}]"
+"NewTabPageManagedQuickLinks"="[{\"url\": \"https://carelink.minimed.eu/patient/sso/login?country=pl&lang=pl\"}]"
+"HomepageLocation"="https://carelink.minimed.eu/patient/sso/login?country=pl&lang=pl"
+
+[HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Edge\RestoreOnStartupURLs]
+"1"="https://carelink.minimed.eu/patient/sso/login?country=pl&lang=pl"
