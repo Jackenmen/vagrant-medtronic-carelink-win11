@@ -70,7 +70,12 @@ Vagrant.configure("2") do |config|
         IO.copy_stream(uri.open, carelink_exe_name)
         if (File.exist?(SYMLINK_NAME))
           File.symlink(carelink_exe_name, "#{SYMLINK_NAME}.new")
-          File.replace("#{SYMLINK_NAME}.new", SYMLINK_NAME)
+          begin
+            File.rename("#{SYMLINK_NAME}.new", SYMLINK_NAME)
+          rescue
+            File.unlink("#{SYMLINK_NAME}.new")
+            raise
+          end
         else
           File.symlink(carelink_exe_name, SYMLINK_NAME)
         end
