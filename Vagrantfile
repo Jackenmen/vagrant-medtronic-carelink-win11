@@ -18,7 +18,7 @@ Vagrant.configure("2") do |config|
 
   # Every Vagrant development environment requires a box. You can search for
   # boxes at https://vagrantcloud.com/search.
-  config.vm.box = "gusztavvargadr/windows-11-21h2-enterprise"
+  config.vm.box = "gusztavvargadr/windows-11-24h2-enterprise-ltsc"
 
   config.vm.guest = :windows
   config.vm.communicator = "winrm"
